@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block title %}Madlibs!{% endblock %} {%block
+content %}
+
+<h1>Madlibs</h1>
+{% if prompts %}
+<div id="form">
+  <form action="/story">
+    {% for prompt in prompts %}
+    <p>
+      <label for="{{prompt}}">{{prompt}}:</label>
+      <input type="text" id="{{prompt}}" name="{{prompt}}" />
+    </p>
+    {% endfor %}
+    <button>Submit!</button>
+  </form>
+</div>
+{% endif %} {% endblock %}

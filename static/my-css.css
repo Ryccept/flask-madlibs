@@ -1,0 +1,29 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(55, 172, 9, 0.576);
+  color: white;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(9, 142, 172, 0.461);
+  color: white;
+  text-align: center;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  max-width: 500px;
+  margin: auto;
+}
+
+form > * {
+  margin-top: 15px;
+}
